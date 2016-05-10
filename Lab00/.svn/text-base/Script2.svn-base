@@ -1,0 +1,10 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$HeadURL$
+#$Revision$
+for(( n=$1;n>=0;n--))
+do
+    echo $n
+done

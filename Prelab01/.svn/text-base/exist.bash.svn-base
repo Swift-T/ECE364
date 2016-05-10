@@ -1,0 +1,17 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$HeadURL$
+#$Revision$
+for filename in $@
+do
+    if [[ -r $filename ]]
+    then
+        echo "File $filename is readable!"
+    elif [[ ! -e $filename ]]
+    then
+        touch $filename    
+    fi
+done
+exit 0
